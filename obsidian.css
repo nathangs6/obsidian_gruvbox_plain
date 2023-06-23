@@ -52,14 +52,14 @@
     --background-secondary-alt:   var(--dark1);
     --text-normal:                var(--light0);
     --text-faint:                 var(--light3);
-    --text-title-h1:              var(--neutral-red);
-    --text-title-h2:              var(--neutral-orange);
-    --text-title-h3:              var(--neutral-yellow);
+    --text-title-h1:              var(--neutral-green);
+    --text-title-h2:              var(--neutral-green);
+    --text-title-h3:              var(--neutral-green);
     --text-title-h4:              var(--neutral-green);
-    --text-title-h5:              var(--neutral-aqua);
-    --text-title-h6:              var(--neutral-blue);
-    --text-link:                  var(--bright-blue);
-    --text-a:                     var(--bright-orange);
+    --text-title-h5:              var(--neutral-green);
+    --text-title-h6:              var(--neutral-green);
+    --text-link:                  var(--neutral-blue);
+    --text-a:                     var(--neutral-blue);
     --text-a-hover:               var(--bright-blue);
     --text-mark:                  rgba(215, 153, 33, 0.4); /* neutral-yellow */
     --pre-code:                   var(--dark1);

@@ -137,14 +137,15 @@ body
     --text-faint:                    var(--light1);
     --text-muted:                    var(--light2);
 
-    --link-url:                      var(--neutral-green);
+    --link-url:                      var(--neutral-blue);
+    --link-url-highlighted:          var(--bright-blue);
 
-    --h1-color:                      var(--neutral-red);
-    --h2-color:                      var(--neutral-yellow);
+    --h1-color:                      var(--neutral-green);
+    --h2-color:                      var(--neutral-green);
     --h3-color:                      var(--neutral-green);
-    --h4-color:                      var(--neutral-aqua);
-    --h5-color:                      var(--neutral-blue);
-    --h6-color:                      var(--neutral-purple);
+    --h4-color:                      var(--neutral-green);
+    --h5-color:                      var(--neutral-green);
+    --h6-color:                      var(--neutral-green);
 
     --text-highlight-bg:             var(--neutral-yellow);
     --text-highlight-fg:             var(--dark0-hard);
@@ -156,12 +157,12 @@ body
     --tag-background:                var(--dark2);
     --tag-background-hover:          var(--dark1);
 
-    --titlebar-text-color-focused:   var(--bright-red);
+    --titlebar-text-color-focused:   var(--bright-yellow);
 
     --inline-title-color:            var(--bright-yellow);
 
-    --bold-color:                    var(--neutral-yellow);
-    --italic-color:                  var(--neutral-yellow);
+    --bold-color:                    var(--light0);
+    --italic-color:                  var(--light0);
 
     --checkbox-color:                var(--light4);
     --checkbox-color-hover:          var(--light4);
@@ -175,8 +176,8 @@ body
     --table-row-odd-background:      rgba(var(--dark2_x), 0.4);
     --table-row-background-hover:    var(--dark2);
 
-    --text-selection:                rgba(var(--neutral-red_x), 0.6);
-    --flashing-background:           rgba(var(--neutral-red_x), 0.3);
+    --text-selection:                rgba(var(--neutral-aqua_x), 0.6);
+    --flashing-background:           rgba(var(--neutral-aqua_x), 0.3);
 
     --code-normal:                   var(--bright-blue);
     --code-background:               var(--dark1);
@@ -187,10 +188,10 @@ body
     --mermaid-exclude:               var(--dark4);
     --mermaid-seqnum:                var(--dark0);
 
-    --icon-color-hover:              var(--bright-red);
+    --icon-color-hover:              var(--bright-yellow);
     --icon-color-focused:            var(--bright-blue);
 
-    --nav-item-color-hover:          var(--bright-red);
+    --nav-item-color-hover:          var(--bright-yellow);
     --nav-item-color-active:         var(--bright-aqua);
     --nav-file-tag:                  rgba(var(--neutral-yellow_x), 0.9);
 
@@ -210,7 +211,7 @@ body
     --dataview-value-background:     rgba(var(--neutral-green_x), 0.3);
 
     --tab-text-color-focused-active:         var(--neutral-yellow);
-    --tab-text-color-focused-active-current: var(--bright-red);
+    --tab-text-color-focused-active-current: var(--bright-yellow);
 }
 
 .theme-light
@@ -297,7 +298,7 @@ body
     --icon-color-hover:              var(--bright-red);
     --icon-color-focused:            var(--bright-blue);
 
-    --nav-item-color-hover:          var(--bright-red);
+    --nav-item-color-hover:          var(--bright-yellow);
     --nav-item-color-active:         var(--neutral-blue);
     --nav-file-tag:                  rgba(var(--neutral-blue_x), 0.9);
 
@@ -413,7 +414,27 @@ pre[class*="language-"]
 
 .cm-url:hover
 {
-    color: var(--text-accent-color) !important;
+    color: var(--link-url-highlighted) !important;
+}
+
+.cm-link
+{
+    color: var(--link-url) !important;
+}
+
+.cm-link:hover
+{
+    color: var(--link-url-highlighted) !important;
+}
+
+.cm-hmd-internal-link
+{
+    color: var(--link-url) !important;
+}
+
+.cm-hmd-internal-link:hover
+{
+    color: var(--link-url-highlighted) !important;
 }
 
 /* Keep highlight/marks the same between viewer and editor. */

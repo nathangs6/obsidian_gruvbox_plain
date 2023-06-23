@@ -1,7 +1,5 @@
 {
-   "name": "Obsidian gruvbox",
-   "version": "0.2.0",
-   "minAppVersion": "0.16.0",
-   "author": "insanum",
-   "authorUrl": "https://insanum.com"
+   "name": "Obsidian Gruvbox Plain",
+   "version": "0.0.0",
+   "minAppVersion": "1.0.0"
 }
